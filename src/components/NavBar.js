@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
+import { Nav } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import "../styles/Navbar.css";
+import { Email } from "@mui/icons-material";
+import { LinkedIn } from "@mui/icons-material";
+import { GitHub } from "@mui/icons-material";
+import "../styles/NavBar.css"
 
 class NavBar extends React.Component {
   render() {
@@ -23,13 +23,13 @@ class NavBar extends React.Component {
             </Nav>
             <Nav className="ml-auto">
               <Nav.Link href="mailto:markangelkimathi@gmail.com">
-                <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
+                <Email style={{ fontSize: 20 }}></Email>
               </Nav.Link>
               <Nav.Link href="https://github.com/Markkimaathi/" target="_blank">
-                <GitHubIcon style={{ fontSize: 19 }}></GitHubIcon>
+                <GitHub style={{ fontSize: 19 }}></GitHub>
               </Nav.Link>
               <Nav.Link href="https://www.linkedin.com/in/mark-kimathi-58257b305/" target="_blank">
-                <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
+                <LinkedIn style={{ fontSize: 21 }}></LinkedIn>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

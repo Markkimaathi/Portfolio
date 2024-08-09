@@ -1,7 +1,7 @@
 import React from "react";
 import JobList from "./JobList";
 import "../styles/Experience.css";
-import FadeInSection from "./FadeInSecton";
+import FadeInSection from "./FadeInSection";
 
 class Experience extends React.Component {
   constructor() {

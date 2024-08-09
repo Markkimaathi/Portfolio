@@ -1,6 +1,5 @@
 import React from "react";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import OpenInBrowserIcon from "@material-ui/icons/OpenInBrowser";
+import { GitHub, OpenInBrowser } from "@mui/icons-material";
 
 class ExternalLinks extends React.Component {
   constructor() {
@@ -11,30 +10,32 @@ class ExternalLinks extends React.Component {
     };
     this.handleSelect = this.handleSelect.bind(this);
   }
+  
   handleSelect(eventKey) {
     this.setState({
       activeKey: eventKey
     });
   }
+  
   render() {
     return (
       <span className="external-links">
         <a className="github-icon" href={this.props.githubLink}>
-          <GitHubIcon
+          <GitHub
             style={{
               fontSize: 20,
               color: "var(--lightest-slate)"
             }}
-          ></GitHubIcon>
+          />
         </a>
         {this.props.openLink && (
           <a className="open-icon" href={this.props.openLink}>
-            <OpenInBrowserIcon
+            <OpenInBrowser
               style={{
                 fontSize: 25,
                 color: "var(--lightest-slate)"
               }}
-            ></OpenInBrowserIcon>
+            />
           </a>
         )}
       </span>

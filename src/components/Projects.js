@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
-import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
-import FadeInSection from "./FadeInSecton";
+import { FolderOpenRounded } from "@mui/icons-material";
+import FadeInSection from "./FadeInSection";
 import ExternalLinks from "./ExternalLinks";
 
 class Projects extends React.Component {
@@ -75,7 +75,7 @@ class Projects extends React.Component {
                 <li className="projects-card">
                   <div className="card-header">
                     <div className="folder-icon">
-                      <FolderOpenRoundedIcon style={{ fontSize: 35 }} />
+                      <FolderOpenRounded style={{ fontSize: 35 }} />
                     </div>
                     <ExternalLinks
                       githubLink={spotlightProjects[key]["link"]}

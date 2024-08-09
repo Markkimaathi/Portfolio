@@ -1,10 +1,9 @@
 import React from "react";
-
 import "../styles/Intro.css";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
-import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
-import FadeInSection from "./FadeInSecton";
+import { Email } from "@mui/icons-material";
+import FadeInSection from "./FadeInSection";
 import FractalTree from "./FractalTree";
 
 class Intro extends React.Component {
@@ -47,7 +46,7 @@ class Intro extends React.Component {
             href="mailto:markangelkimathi@gmail.com"
             className="intro-contact"
           >
-            <EmailRoundedIcon></EmailRoundedIcon>
+            <Email></Email>
             {" Say hi!"}
           </a>
         </FadeInSection>
