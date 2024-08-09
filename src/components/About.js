@@ -39,7 +39,10 @@ class About extends React.Component {
       "React.js",
       "Python",
       "Javascript",
-      "C#"
+      "C#",
+      ".NET",
+      "MongoDB",
+      "Java",
     ];
 
     return (
